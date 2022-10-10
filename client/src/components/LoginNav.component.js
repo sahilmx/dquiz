@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 
 function Loginnav(props) {
   let location = useLocation();
-  console.log(location.pathname);
 
   const logout = () => {
     localStorage.clear();

@@ -4,7 +4,6 @@ import styles from "../componentsStyles/LoginRegister.module.css";
 import { useHistory } from "react-router-dom";
 
 function Login(props) {
-  console.log(props);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   let history = useHistory();
@@ -22,7 +21,6 @@ function Login(props) {
     axios
       .post("http://localhost:3003/api/user/login", { email, password }, options)
       .then((res) => {
-        console.log(res);
         localStorage.setItem("loggedin", true);
         localStorage.setItem("auth-token", res.headers["auth-token"]);
         localStorage.setItem("name", res.data.name);

@@ -50,7 +50,6 @@ function Question(props) {
         options
       )
       .then((res) => {
-        console.log(res);
         localStorage.setItem("graphPoints",grapPoints);
         localStorage.setItem("Score",score);
         history.push({
@@ -60,7 +59,6 @@ function Question(props) {
      //   history.push("/score");
       })
       .catch((err) => console.log(err));
-    console.log(score);
   };
 
   function shuffleArray(array) {
@@ -97,7 +95,6 @@ function Question(props) {
   useEffect(() => {
     setquestion(res.results[dynamicQue].question);
     setCorrectAnswer(res.results[dynamicQue].correct_answer);
-    console.log(res.results[dynamicQue]);
     let optionsRandom = [ res.results[dynamicQue].correct_answer,
     ...res.results[dynamicQue].incorrect_answers];
     // setoptions([
@@ -140,11 +137,9 @@ function Question(props) {
         ele.className = styles.containeractive;
         ans = ele.childNodes[0].value;
         setSelectedAnswer(ans);
-        console.log({ans});
       }
     }
     setanswers({ ...answers, [dynamicQue]: ans });
-    console.log(answers);
 
   };
 
@@ -195,7 +190,6 @@ function Question(props) {
         <a
           onClick={(e) => {
               let gp=[...grapPoints];
-              console.log({gp});
               let newGp=[];
               newGp.push(ques);
 
