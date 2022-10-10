@@ -1,7 +1,7 @@
 * {
   font-family: Georgia, serif;
   box-sizing: border-box;
-
+  font-size: 1em;
   margin: 0 auto;
 }
 
@@ -15,7 +15,7 @@
 .row {
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin: 0.5% auto;
+  margin: 1% auto;
   width: 75vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -38,10 +38,10 @@
 
 .info {
   width: 20vw;
-  background: white;
+  background: rgb(157, 157, 157);
   text-align: justify;
-  border: 2px solid black;
-  border-radius: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
   margin: 8px auto;
   padding: 1% 1% 1% 1%;
   line-height: 22px;
@@ -49,6 +49,7 @@
 
 .element {
   display: inline;
+  padding: 5px;
   text-align: center;
 }
 
@@ -59,7 +60,7 @@
 @media screen and (max-width: 800px) {
   .info {
     width: 80vw;
-    background: white;
+    background: rgb(157, 157, 157);
     text-align: justify;
     border: 2px solid black;
     border-radius: 10px;

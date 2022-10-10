@@ -18,9 +18,9 @@
 .buttons {
   float: right;
   margin: 0.5% 4%;
-  background: #4caf50;
+  background: #1c1c1c;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
   padding: 1% 1%;
   display: block;
   color: white;

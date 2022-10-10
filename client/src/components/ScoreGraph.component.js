@@ -33,7 +33,9 @@ var svg = d3.select("#graph_plot").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
+    .style("stroke","white")
     .attr("transform", `translate(${margin.left},     ${margin.top})`);
+    
 
 
        // Add X axis and Y axis
@@ -63,7 +65,7 @@ var svg = d3.select("#graph_plot").append("svg")
     }
 
     return (<>
-        <div>
+        <div style={{color:"white" , padding:"5%"}}>
             your Score is : {score}
         </div>
         <br></br>
